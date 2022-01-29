@@ -23,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \DB::connection()->getPdo()->sqliteCreateFunction("REGEXP", "preg_match", 2);
+        try {
+            \DB::connection()->getPdo()->sqliteCreateFunction("REGEXP", "preg_match", 2);
+        } catch (\Exception $exception) {
+            
+        }
     }
 }
