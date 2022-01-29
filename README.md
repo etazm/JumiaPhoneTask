@@ -1,6 +1,6 @@
 # How It Work
 
-<img src="https://files.fm/thumb_show.php?i=bqvz2fm4a">
+<img src="https://files.fm/thumb_show.php?i=6zzr3nz55">
 
 # Services
 
