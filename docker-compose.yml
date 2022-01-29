@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    build:
+      context: BE-Laravel
+      dockerfile: Dockerfile
+    container_name: jumia_app_back
+    #    restart: unless-stopped
+    ports:
+      - '9001:9000'
+    networks:
+      - jumia
+  angular:
+    build:
+      context: FE-angular
+      dockerfile: Dockerfile
+    container_name: jumia_app_front
+    ports:
+      - "4200:4200"
+networks:
+  jumia:
+    driver: bridge

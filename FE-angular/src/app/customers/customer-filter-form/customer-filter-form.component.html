@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-4">
+    <mat-form-field appearance="fill" hintLabel="choose country to filter with">
+      <mat-label>Select Country</mat-label>
+      <mat-select (selectionChange)="filterChanged()" [(value)]="selected_country">
+        <mat-option [value]="null">All Countries</mat-option>
+        <mat-option *ngFor="let country of countries" value="{{ country.code }}">{{ country.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-4">
+    <mat-form-field appearance="fill" hintLabel="choose an option">
+      <mat-label>Select State</mat-label>
+      <mat-select (selectionChange)="filterChanged()" [(value)]="is_valid">
+        <mat-option [value]="null">All Phones</mat-option>
+        <mat-option value="1">Valid Phones</mat-option>
+        <mat-option value="0">Invalid Phones</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </div>
+</div>
