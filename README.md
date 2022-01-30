@@ -25,3 +25,7 @@ responsible for UI/UX
 - clone repo `git clone https://github.com/etazm/JumiaPhoneTask.git`
 - then change your directory `cd JumiaPhoneTask`
 - run project `docker-compose up -d`
+
+
+## Find the app on
+http://localhost:4200/
